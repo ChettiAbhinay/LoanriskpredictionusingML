@@ -1,0 +1,10 @@
+corr = df.corr()
+plt.figure(figsize=(15,10))
+sns.heatmap(corr, annot = True, cmap="BuPu")
+
+df.head()
+
+# drop unnecessary columns
+cols = ['ApplicantIncome', 'CoapplicantIncome', "LoanAmount", "Loan_Amount_Term", "Total_Income", 'Loan_ID', 'CoapplicantIncomeLog']
+df = df.drop(columns=cols, axis=1)
+df.head()
