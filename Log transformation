@@ -1,0 +1,15 @@
+# apply log transformation to the attribute
+df['ApplicantIncomeLog'] = np.log(df['ApplicantIncome']+1)
+sns.distplot(df["ApplicantIncomeLog"])
+
+df['CoapplicantIncomeLog'] = np.log(df['CoapplicantIncome']+1)
+sns.distplot(df["CoapplicantIncomeLog"])
+
+df['LoanAmountLog'] = np.log(df['LoanAmount']+1)
+sns.distplot(df["LoanAmountLog"])
+
+df['Loan_Amount_Term_Log'] = np.log(df['Loan_Amount_Term']+1)
+sns.distplot(df["Loan_Amount_Term_Log"])
+
+df['Total_Income_Log'] = np.log(df['Total_Income']+1)
+sns.distplot(df["Total_Income_Log"])
