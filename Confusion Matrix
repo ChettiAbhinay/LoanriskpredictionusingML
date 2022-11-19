@@ -1,0 +1,9 @@
+model = RandomForestClassifier()
+model.fit(x_train, y_train)
+
+from sklearn.metrics import confusion_matrix
+y_pred = model.predict(x_test)
+cm = confusion_matrix(y_test, y_pred)
+cm
+
+sns.heatmap(cm, annot=True)
