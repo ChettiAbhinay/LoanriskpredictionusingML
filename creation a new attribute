@@ -1,0 +1,3 @@
+# total income
+df['Total_Income'] = df['ApplicantIncome'] + df['CoapplicantIncome']
+df.head()
