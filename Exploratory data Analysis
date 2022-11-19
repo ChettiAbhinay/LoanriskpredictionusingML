@@ -1,0 +1,26 @@
+# categorical attributes visualization
+sns.countplot(df['Gender'])
+
+sns.countplot(df['Married'])
+
+sns.countplot(df['Dependents'])
+
+sns.countplot(df['Education'])
+
+sns.countplot(df['Self_Employed'])
+
+sns.countplot(df['Property_Area'])
+
+sns.countplot(df['Loan_Status'])
+
+# numerical attributes visualization
+sns.distplot(df["ApplicantIncome"])
+
+sns.distplot(df["CoapplicantIncome"])
+
+sns.distplot(df["LoanAmount"])
+
+sns.distplot(df['Loan_Amount_Term'])
+
+sns.distplot(df['Credit_History'])
+
